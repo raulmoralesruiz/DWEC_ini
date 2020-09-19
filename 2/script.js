@@ -1,3 +1,23 @@
+/*
+Está página permitirá:
+
+• Insertar nuevos empleados en la tabla.
+    Deberá crear la función javascriptcorrespondiente que permita insertar nuevos empleados.
+    En el caso de insertarun nuevo empleado deberá actualizarse el número total de empleados.
+    En elcaso de ya existir el empleado deberá mostrarse una alerta indicando que yaexiste el empleado.
+    El DNI será el identificador del empleado.
+
+• Borrar un empleado de la tabla.
+    Deberá crear la función javascriptcorrespondiente que permita borrar un empleado.
+    Para borrar un empleadodeberá introducirse el DNI del empleado que se desea borrar.
+    En el caso deborrar un empleado deberá actualizarse el número total de empleados.
+    En elcaso de que no exista el empleado deberá mostrarse una alerta.
+    
+• Modificar un empleado de la tabla.
+    Deberá crear la función javascriptcorrespondiente.
+    En el caso de que no exista el empleado a modificar deberámostrar una alerta indicando que el empleado a modificar no existe.
+*/
+
 const numEmp = document.getElementById("num-emp");
 const tabla = document.getElementById("tabla-emp");
 
