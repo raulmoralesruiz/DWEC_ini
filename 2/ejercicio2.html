@@ -36,11 +36,16 @@
         </tr>
     </table>
 
-    <input type="button" name="bt-add" id="bt-add" value="Add emp" onclick="insertar()">
 
-    <input type="button" name="bt-ini" id="bt-ini" value="existe?" onclick="empleadoExiste()">
+    <table id="tabla-botones">
+        <tr>
+            <td> <input type="button" name="bt-add" id="bt-add" value="Añadir" onclick="insertar()"> </td>
+            <td> <input type="button" name="bt-del" id="bt-del" value="Borrar" onclick="borrar()"> </td>
+            <td> <input type="button" name="bt-mod" id="bt-mod" value="Modificar" onclick="modificar()"> </td>
+        </tr>
+    </table>
 
-
+    
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
