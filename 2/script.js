@@ -91,6 +91,8 @@ function empleadoExiste(emp) {
     //guarda todos las celdas con clase dniEmp en la variable empleados
     let empleados = document.getElementsByClassName("dniEmp");
 
+    console.log(empleados);
+
     let encontrado = false;
 
     //buscamos si el empleado existe (cualquier celda de la tabla)
@@ -112,6 +114,13 @@ function empleadoExiste(emp) {
     Para borrar un empleado deberá introducirse el DNI del empleado que se desea borrar.
     En el caso de borrar un empleado deberá actualizarse el número total de empleados.
     En el caso de que no exista el empleado deberá mostrarse una alerta.
+*/
+
+/*
+revisar: ---------------------------------------------------------------------------------------
+    deleteRow
+    indexOf
+revisar: ---------------------------------------------------------------------------------------
 */
 
 function borrar() {
@@ -144,17 +153,21 @@ function borrar() {
             }
         }
 
-        //se guarda la celda concreta que contiene el DNI
-        td = empleados[posE];
+        tabla.deleteRow(posE + 1);
 
-        //se guarda la fila que contiene todos los datos del empleado
-        tr = td.parentNode;
+        // ------- Otra forma de eliminar la fila del empleado introducido -------
+        // //se guarda la celda concreta que contiene el DNI
+        // td = empleados[posE];
 
-        //se guarda la tabla
-        table = tr.parentNode;
+        // //se guarda la fila que contiene todos los datos del empleado
+        // tr = td.parentNode;
 
-        //se elimina la fila anterior de la tabla
-        table.removeChild(tr);
+        // //se guarda la tabla
+        // table = tr.parentNode;
+
+        // //se elimina la fila anterior de la tabla
+        // table.removeChild(tr);
+
 
         //se actualiza el número de empleados actuales
         numEmp.innerText = "Número total de empleados: " + (totalEmpleados - 1);
